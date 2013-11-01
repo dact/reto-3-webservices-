@@ -1,0 +1,30 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div>Calculadora eafit request post por soap</div>
+        <form action="php/webcalc.php" method="post">
+        Parametro1<input type="text" name="p1">
+        Parametro2<input type="text" name="p2">
+        Operacion<input type="text" name="op">
+        <input type="submit" value="calcular" name="calculadora-post">
+        </form>
+        
+        <div>Calculadora eafit request get por rest</div>
+        <form action="php/webcalc.php" method="get">
+        Parametro1<input type="text" name="p1">
+        Parametro2<input type="text" name="p2">
+        Operacion<input type="text" name="op">
+        <input type="submit" value="calcular" name="calculadora-get">
+        </form>
+        
+        
+    </body>
+</html>
