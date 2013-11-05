@@ -1,0 +1,38 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h2>Calculadora eafit request post por soap</h2>
+    <form action="php/webcalc.php" method="post">
+        Parametro1<input type="text" name="p1">
+        Parametro2<input type="text" name="p2">
+        Operacion<input type="text" name="op">
+        <input type="submit" value="calcular" name="calculadora-post">
+    </form>
+
+    <h2>Calculadora eafit request get por rest</h2>
+<form action="php/webcalc.php" method="get">
+    Parametro1<input type="text" name="p1">
+    Parametro2<input type="text" name="p2">
+    Operacion<input type="text" name="op">
+    <input type="submit" value="calcular" name="calculadora-get">
+</form>
+
+<h2>Robotcalc</h2>
+<form action="php/robotcalc.php" method="post" enctype="multipart/form-data">
+    <label for="archivo">Archivo xml:</label>
+    <input type="file" name="archivo" id="file" accept="Text/xml"><br>
+    <input type="submit" name="robotcalc" value="Subir">
+</form>
+ descarga este ejemplo para saber como funciona.<a href="adjuntos/ejemplo.xml" download="ejemplo.xml">ejemplo.xml</a>
+
+
+</body>
+</html>
